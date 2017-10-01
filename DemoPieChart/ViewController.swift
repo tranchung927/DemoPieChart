@@ -9,17 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var pieChart: PieChartView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        pieChart.addItem(value: 20, color: UIColor.blue)
+        pieChart.addItem(value: 60, color: UIColor.yellow)
+        pieChart.addItem(value: 20, color: UIColor.green)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 

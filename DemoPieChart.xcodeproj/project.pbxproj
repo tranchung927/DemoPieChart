@@ -12,6 +12,8 @@
 		109C30DC1F80882C002CB46B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 109C30DA1F80882C002CB46B /* Main.storyboard */; };
 		109C30DE1F80882C002CB46B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 109C30DD1F80882C002CB46B /* Assets.xcassets */; };
 		109C30E11F80882C002CB46B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 109C30DF1F80882C002CB46B /* LaunchScreen.storyboard */; };
+		109C30E91F808834002CB46B /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109C30E81F808834002CB46B /* Extention.swift */; };
+		109C30EB1F8094D2002CB46B /* ExtentionPieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109C30EA1F8094D2002CB46B /* ExtentionPieChart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		109C30DD1F80882C002CB46B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		109C30E01F80882C002CB46B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		109C30E21F80882C002CB46B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		109C30E81F808834002CB46B /* Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extention.swift; path = ../Extention.swift; sourceTree = "<group>"; };
+		109C30EA1F8094D2002CB46B /* ExtentionPieChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtentionPieChart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		109C30D51F80882C002CB46B /* DemoPieChart */ = {
 			isa = PBXGroup;
 			children = (
+				109C30E81F808834002CB46B /* Extention.swift */,
+				109C30EA1F8094D2002CB46B /* ExtentionPieChart.swift */,
 				109C30D61F80882C002CB46B /* AppDelegate.swift */,
 				109C30D81F80882C002CB46B /* ViewController.swift */,
 				109C30DA1F80882C002CB46B /* Main.storyboard */,
@@ -136,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				109C30EB1F8094D2002CB46B /* ExtentionPieChart.swift in Sources */,
 				109C30D91F80882C002CB46B /* ViewController.swift in Sources */,
+				109C30E91F808834002CB46B /* Extention.swift in Sources */,
 				109C30D71F80882C002CB46B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +307,7 @@
 				109C30E71F80882C002CB46B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
