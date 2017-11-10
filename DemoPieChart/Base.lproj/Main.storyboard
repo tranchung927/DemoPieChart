@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,10 +24,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CH5-yz-GHB" customClass="PieChartView" customModule="DemoPieChart" customModuleProvider="target">
-                                <rect key="frame" x="27.5" y="173.5" width="320" height="320"/>
+                                <rect key="frame" x="26" y="172" width="323" height="323"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="320" id="1fE-cd-YBK"/>
                                     <constraint firstAttribute="width" secondItem="CH5-yz-GHB" secondAttribute="height" id="ZMb-8Q-RdB"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -36,14 +36,26 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="centerRadius">
                                         <real key="value" value="0.5"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="titleCenter" value="Nam"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnN-dZ-2AS">
+                                <rect key="frame" x="168" y="617" width="39" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="hbp-wK-2fy"/>
+                                </constraints>
+                                <state key="normal" title="Click!"/>
+                                <connections>
+                                    <action selector="setValue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Sd-EF-wUo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="CH5-yz-GHB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QAC-3B-EKi"/>
                             <constraint firstItem="CH5-yz-GHB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dca-cc-BTB"/>
+                            <constraint firstItem="nnN-dZ-2AS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hXe-jX-493"/>
+                            <constraint firstItem="CH5-yz-GHB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="jyW-SB-xp9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nnN-dZ-2AS" secondAttribute="bottom" constant="20" id="q1c-3W-7ex"/>
                         </constraints>
                     </view>
                     <connections>

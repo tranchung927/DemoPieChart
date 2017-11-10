@@ -17,5 +17,11 @@ class ViewController: UIViewController {
         pieChart.addItem(value: 60, color: UIColor.yellow)
         pieChart.addItem(value: 20, color: UIColor.green)
     }
+    @IBAction func setValue(_ sender: Any) {
+        pieChart.reDraw()
+        pieChart.addItem(value: 40, color: UIColor.blue)
+        pieChart.addItem(value: 60, color: UIColor.yellow)
+        pieChart.setNeedsDisplay()
+    }
 }
 
